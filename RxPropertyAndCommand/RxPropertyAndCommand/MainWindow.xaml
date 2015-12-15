@@ -1,0 +1,26 @@
+﻿<Window x:Class="RxPropertyAndCommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="525">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0"  Width="525" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                FontSize="18" Background="Blue" Foreground="White" Content="Learning Property and Command in WPF Application"></Label>
+        <Button  Name="WpfPropertyandCommand" Grid.Row="2" Width="400"  Height="60" FontSize="18" Background="Gold" Foreground="Maroon"
+                Content="Using Wpf Property and Command Demo" Click="WpfPropertyandCommand_Click"></Button>
+        <Button Name="ReactiveProperty" Grid.Row="3" Width="400"  Height="60" FontSize="18" Background="Gold" Foreground="Maroon" 
+                Content="Using Reactive Property Demo" Click="ReactiveProperty_Click"></Button>
+        <Button Name="ReactiveCommand" Grid.Row="4" Width="400"  Height="60"  FontSize="18" Background="Gold" Foreground="Maroon"
+                Content="Using Reactive Command Demo" Click="ReactiveCommand_Click"></Button>
+
+    </Grid>
+</Window>
